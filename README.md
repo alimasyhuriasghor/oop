@@ -1,9 +1,7 @@
-# Howdy! Welcome To My OOP (Object-Oriented Programming) repository
+# Howdy! Welcome To `from-kelas-terbuka` Branch
 
-This repository contains all of my OOP (Object-Oriented Programming) tutorial from trusted sources. Each of which will have their own branch and reference from where I borrowed the Object-Oriented Programming tutorials.
+This branch contains all of my OOP (Object-Oriented Programming) tutorial from [kelas terbuka](https://www.youtube.com/watch?v=1PjHsUnOkes&list=PLZS-MHyEIRo7ab0-EveSvf4CLdyOECMm0)
 
-# What Is OOP?
+# Reference
 
-According to [Dive Into Design Patterns](https://refactoring.guru/design-patterns/book) book which was explained by [Indonesia Belajar](https://www.youtube.com/watch?v=_Ld8wMr4OZ4&list=PL2O3HdJI4voFoyU6YyuLBdrsBSZWWtbQt), Object-Oriented Programming is a paradigm based on the concept of wrapping pieces of **data** (attributes) and **behaviour** (methods) related to that data into special bundles called [objects](https://docs.python.org/3/glossary.html#term-object), which are constructed from a set of "blueprints" defined by a programme called [classes](https://docs.python.org/3/glossary.html#term-class).
-
-Often we hear the words "object" and "instance" interchangeably. However, in my opinion, object is a variable that has attributes and methods, whereas an instance is a spesific object that is made from a class.
+I borrowed the Python OOP tutorials from kelas terbuka.
