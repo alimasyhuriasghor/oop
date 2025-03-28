@@ -38,7 +38,17 @@ muchsin = Person("Muchsin", 20)
 # abdullah is indeed an instance because it is a spesific object's name that was created from a class Person. It is also an object because it has attributes and methods
 abdullah = Person("Abdullah", 25)
 
-# Do something to the objects
+# Print all of the instance details
+print(ali) # Output: Person's name: Ali
+                     Person's age: 21
+
+print(muchsin) # Output: Person's name: Muchsin
+                         Person's age: 20
+
+print(abdullah) # Output: Person's name: Abdullah
+                          Person's age: 25
+
+# Do something to the instances
 ali.greet(muchsin) # Output: Ali greets Muchsin
 
 abdullah.greet(muchsin) # Output: Abdullah greets Muchsin
