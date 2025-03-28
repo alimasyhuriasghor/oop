@@ -40,13 +40,13 @@ abdullah = Person("Abdullah", 25)
 
 # Print all of the instance details
 print(ali) # Output: Person's name: Ali
-                     Person's age: 21
+           #         Person's age: 21
 
 print(muchsin) # Output: Person's name: Muchsin
-                         Person's age: 20
+               #         Person's age: 20
 
 print(abdullah) # Output: Person's name: Abdullah
-                          Person's age: 25
+                #         Person's age: 25
 
 # Do something to the instances
 ali.greet(muchsin) # Output: Ali greets Muchsin
