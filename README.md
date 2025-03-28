@@ -4,7 +4,7 @@ This repository contains all of my OOP (Object-Oriented Programming) tutorial fr
 
 # What Is OOP?
 
-According to "[Dive Into Design Patterns](https://refactoring.guru/design-patterns/book)" book that was explained by [Indonesia Belajar](https://www.youtube.com/watch?v=_Ld8wMr4OZ4&list=PL2O3HdJI4voFoyU6YyuLBdrsBSZWWtbQt), Object-Oriented Programming is a paradigm based on the concept of wrapping pieces of **data** (attributes) and **behaviour** (methods) related to that data into special bundles called [objects](https://docs.python.org/3/glossary.html#term-object), which are constructed from a set of "blueprints" defined by a programmer called [classes](https://docs.python.org/3/glossary.html#term-class).
+According to "[Dive Into Design Patterns](https://refactoring.guru/design-patterns/book)" book which was explained by [Indonesia Belajar](https://www.youtube.com/watch?v=_Ld8wMr4OZ4&list=PL2O3HdJI4voFoyU6YyuLBdrsBSZWWtbQt), Object-Oriented Programming is a paradigm based on the concept of wrapping pieces of **data** (attributes) and **behaviour** (methods) related to that data into special bundles called [objects](https://docs.python.org/3/glossary.html#term-object), which are constructed from a set of "blueprints" defined by a programmer called [classes](https://docs.python.org/3/glossary.html#term-class).
 
 Often we hear the words "object" and "instance" are used interchangeably. However, in my opinion, object is any data that has attributes and methods, whereas an instance is a spesific object's name with given name. 
 
@@ -54,3 +54,23 @@ ali.greet(muchsin) # Output: Ali greets Muchsin
 abdullah.greet(muchsin) # Output: Abdullah greets Muchsin
     
 ```
+
+# Code Elaborations
+
+Please do note that `self` refers to the instance of a class. It is exists because all special and instance methods are always received their instances as for the first argument.
+
+## Class
+
+Class is a template to create objects.
+
+## `__init__()`
+
+`__init__()` is a special method in Python that is automatically called when we create an instance of a class. Its primary purpose is used to initialize the attributes of an object during object creation.
+
+## `__str__()`
+
+`__str__()` is a special method that returns a friendly user readable string representation of an object.
+
+## `greet(self)`
+
+`greet(self)` is an instance method. It is a method that bounds to the object of a class.
