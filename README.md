@@ -11,66 +11,81 @@ Often we hear the words "object" and "instance" are used interchangeably. Howeve
 For instance, below is the example of Python code that implements OOP paradigm concept:
 
 ```python
-# Create a template's name to make user-defined objects
-class Person: 
-    # Create an initializer to set attributes for each objects of a class Person
+class Person:
+    """
+    A class which represents a person.
+
+    Attributes:
+    name (str): the name of the person.
+    age (int): the age of the person.
+    """
+
     def __init__(self, name: str, age: int) -> None:
-        # Create instance variables for each objects of a class Person. They are also guaranteed to be unique to each instances.
+        if not isinstance(name, str):
+            raise TypeError(f"Error, expected 'name' to be str! Got {type(name).__name__}.")
         self.name = name
+
+        if not isinstance(age, int):
+            raise TypeError(f"Error, expected 'age' to be an int! Got {type(age).__name__}.")
         self.age = age
 
-    # Create a string (str) representation object that is meant to be readble to the user
     def __str__(self) -> str:
         return f"Person's name: {self.name}\nPerson's age: {self.age}"
+    
+    def __repr__(self) -> str:
+        attrs = ", ".join(f"{key}='{value}'" if isinstance(value, str) else
+                          f"{key}={value}" for key, value in self.__dict__.items())
+        return f"{type(self).__name__}({attrs})"
 
-    # Create an instance method to greet other instance's name
     def greet(self, other) -> None:
+        """Greet other instance's name."""
         print(f"{self.name} greets {other.name}")
-        
-# Create instances object of a class Person
 
-# ali is indeed an instance because it is a spesific object's name that was created from a class Person. It is also an object because it has attributes and methods
+# Create instances of a class Person
 ali = Person("Ali", 21)
+muchsin = Person("Muchsin", 21)
 
-# muchsin is indeed an instance because it is a spesific object's name that was created from a class Person. It is also an object because it has attributes and methods
-muchsin = Person("Muchsin", 20)
+# Print the objects detail
+print(f"{ali!r}")
 
-# abdullah is indeed an instance because it is a spesific object's name that was created from a class Person. It is also an object because it has attributes and methods
-abdullah = Person("Abdullah", 25)
+# Output: Person(name='Ali', age=21)
 
-# Print all of the instance details
-print(ali) # Output: Person's name: Ali
-           #         Person's age: 21
+print(f"{muchsin!r}")
 
-print(muchsin) # Output: Person's name: Muchsin
-               #         Person's age: 20
-
-print(abdullah) # Output: Person's name: Abdullah
-                #         Person's age: 25
+# Output: Person(name='Muchsin', age=21)
 
 # Do something to the instances
-ali.greet(muchsin) # Output: Ali greets Muchsin
+ali.greet(muchsin)
 
-abdullah.greet(muchsin) # Output: Abdullah greets Muchsin
-    
+# Output: Ali greets Muchsin
+
+muchsin.greet(ali)
+
+# Output: Muchsin greets Ali
 ```
 
 # Code Elaborations
 
 Please do note that `self` refers to the instance of a class. It is exists because all special and instance methods are always received their instances as for the first argument.
 
-## Class
+## 1. Class
 
 Class is a template to create objects.
 
-## `__init__()`
+## 2. Init
 
-`__init__()` is a special method in Python that is automatically called when we create an instance of a class. Its primary purpose is used to initialize the attributes of an object during object creation.
+`__init__(self, name: str, age: int) -> None` is a special method in Python that is automatically called when we create an instance of a class. Its primary purpose is used to initialize the attributes of an object during object creation.
 
-## `__str__()`
+## 3. Str
 
-`__str__()` is a special method that returns a friendly user readable string representation of an object.
+`__str__(self) -> str` is a special method in Python that returns a human-readble representation of the object it self.
 
-## `greet(self)`
+## 4. Repr
 
-`greet(self)` is an instance method. It is a method that bounds to the object of a class.
+`__repr__(self) -> str` is a special method in Python that returns the real object representation it self after we've defined the attributes value.
+
+## 5. Greet
+
+`greet(self, other) -> None` is an instance method. It's a method that bounds to the object of a class. Its primary purpose is to access and modify the object's attributes. In this case, it's used to acces the object's attribute to greet other instance's name.
+
+> **Note**: Please do note that `self` is not a keyword in Python. However, by convention, all of instance and special methods must have `self` for their first parameter. It's also refers to the instance of a class, and behind the scences, Python automatically passes the instance to the first argument, which is `self`.
