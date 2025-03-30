@@ -13,7 +13,7 @@ For instance, below is the example of Python code that implements OOP paradigm c
 ```python
 class Person:
     """
-    A class which represents a person.
+    A class that represents a person.
 
     Attributes:
     name (str): the name of the person.
@@ -66,8 +66,6 @@ muchsin.greet(ali)
 
 # Code Elaborations
 
-Please do note that `self` refers to the instance of a class. It is exists because all special and instance methods are always received their instances as for the first argument.
-
 ## 1. Class
 
 Class is a template to create objects.
@@ -88,4 +86,4 @@ Class is a template to create objects.
 
 `greet(self, other) -> None` is an instance method. It's a method that bounds to the object of a class. Its primary purpose is to access and modify the object's attributes. In this case, it's used to acces the object's attribute to greet other instance's name.
 
-> **Note**: Please do note that `self` is not a keyword in Python. However, by convention, all of instance and special methods must have `self` for their first parameter. It's also refers to the instance of a class, and behind the scences, Python automatically passes the instance to the first argument, which is `self`.
+> **Note**: Please do note that `self` is not a keyword in Python. However, by convention, all of instance and special methods must have `self` for their first parameter. It's also refers to the instance of a class, and behind the scences, Python automatically passes the instance to the first parameter, which is `self`.
