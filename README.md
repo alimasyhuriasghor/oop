@@ -86,4 +86,4 @@ In Python, [__repr__()](https://docs.python.org/3/reference/datamodel.html#objec
 
 `greet()` is an instance method. It's a method that bounds to the object of a class. Its primary purpose is to access and modify the object's attributes. In this case, it's used to acces the object's attribute name to greet other object's name.
 
-> **Note**: Please do note that `self` is neither a keyword nor it's an obligatory parameter. However, by convention, all of instance and special methods must have `self` for their first parameter — It's also refers to the instance of a class, and behind the scences, the Python interpreter automatically passes the instance to the first parameter, which is `self`.
+> **Note**: Please do note that `self` is neither a keyword nor an obligatory parameter. However, by convention, all instance and special methods must have `self` for their first parameter—It also refers to the instance of a class, and behind the scences, the Python interpreter automatically passes the instance to the first parameter, which is `self`.
