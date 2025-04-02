@@ -1,6 +1,6 @@
 # Howdy! Welcome To My OOP (Object-Oriented Programming) Repository
 
-This repository contains all of my OOP (Object-Oriented Programming) tutorial from trusted sources. Each of which will have their own branch and reference from where I borrowed the Object-Oriented Programming tutorials.
+This repository contains all of my OOP (Object-Oriented Programming) tutorials from trusted sources. Each of the Object-Oriented Programming tutorials will have their own branch and reference from where I borrowed the Object-Oriented Programming tutorials.
 
 # What Is OOP?
 
@@ -72,18 +72,18 @@ Class is a template to create objects.
 
 ## 2. Init
 
-`__init__(self, name: str, age: int) -> None` is a special method in Python that is automatically called when we create an instance of a class. Its primary purpose is used to initialize the attributes of an object during object creation.
+In Python, `__init__()` is a [special method](https://docs.python.org/3/glossary.html#term-special-method) that is automatically called when we create an instance of a class. Its primary purpose is used to initialize the attributes of an object during object creation.
 
 ## 3. Str
 
-`__str__(self) -> str` is a special method in Python that returns a human-readble representation of the object it self.
+In Python, [__str__()](https://docs.python.org/3/reference/datamodel.html#object.__str__) is a special method in Python that returns a human-readble string representation of an object.
 
 ## 4. Repr
 
-`__repr__(self) -> str` is a special method in Python that returns the real object representation it self after we've defined the attributes value.
+In Python, [__repr__()](https://docs.python.org/3/reference/datamodel.html#object.__repr__) is a special method in Python that returns offical string representation of an object.
 
 ## 5. Greet
 
-`greet(self, other) -> None` is an instance method. It's a method that bounds to the object of a class. Its primary purpose is to access and modify the object's attributes. In this case, it's used to acces the object's attribute to greet other instance's name.
+`greet()` is an instance method. It's a method that bounds to the object of a class. Its primary purpose is to access and modify the object's attributes. In this case, it's used to acces the object's attribute to greet other object's name.
 
-> **Note**: Please do note that `self` is not a keyword in Python. However, by convention, all of instance and special methods must have `self` for their first parameter. It's also refers to the instance of a class, and behind the scences, Python automatically passes the instance to the first parameter, which is `self`.
+> **Note**: Please do note that `self` is neither a keyword nor it's an obligatory parameter. However, by convention, all of instance and special methods must have `self` for their first parameter — It's also refers to the instance of a class, and behind the scences, the Python interpreter automatically passes the instance to the first parameter, which is `self`.
