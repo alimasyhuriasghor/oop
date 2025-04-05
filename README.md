@@ -6,7 +6,7 @@ This repository contains all of my OOP (Object-Oriented Programming) tutorials a
 
 According to "[Dive Into Design Patterns](https://refactoring.guru/design-patterns/book)" book which was explained by [Indonesia Belajar](https://www.youtube.com/watch?v=_Ld8wMr4OZ4&list=PL2O3HdJI4voFoyU6YyuLBdrsBSZWWtbQt), Object-Oriented Programming is a paradigm based on the concept of wrapping pieces of **data** (attributes) and **behaviour** (methods) related to that data into special bundles called [objects](https://docs.python.org/3/glossary.html#term-object), which are constructed from a set of "blueprints" defined by a programmer called [classes](https://docs.python.org/3/glossary.html#term-class).
 
-Often we hear the words "object" and "instance" are used interchangeably. However, in my opinion, object is any data that has attributes and methods, whereas an instance is a spesific object's name with given name. 
+Often, we hear the words "object" and "instance" are used interchangeably. However, in my opinion, object is a variable that has attributes and methods (Attributes are variables that are bound to an object, and each object of a class will have its own unique values — for instance, suppose we have a class named `Person`, the attributes of this class might be `name`, `age`, etc. Methods are the actions of what an object can do. If we have a class named `Person`, the method will probably greet), whereas an instance is a particular object's name that is created from a class.
 
 For instance, below is the example of Python code that implements OOP paradigm concept:
 
